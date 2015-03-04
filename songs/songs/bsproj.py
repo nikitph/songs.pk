@@ -53,7 +53,6 @@ soup = BeautifulSoup(page.read(), parse_only=links)
 for link in soup('a'):
     s = str(link.get('href'))
     if(s.__contains__('list')):
-        print(s)
         func2('http://www.songspk.name/' + link.get('href'))
 
 
