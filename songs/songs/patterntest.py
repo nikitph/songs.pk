@@ -22,7 +22,7 @@ This is a test e-mail message.
 
 try:
    smtpObj = smtplib.SMTP('mail.nikitph.com', 26)
-   smtpObj.login(sender,'davajvmasd123')
+   smtpObj.login(sender,'')
    print "login"
    smtpObj.sendmail(sender, receivers, message)
    print "Successfully sent email"

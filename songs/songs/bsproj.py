@@ -36,7 +36,7 @@ def func2(alphabet):
 def writeftp(file):
     ftp = ftplib.FTP()
     ftp.connect("ftp.irtiamized.com", 21)
-    ftp.login("nikitph@irtiamized.com", "#@$hkey123")
+    ftp.login("nikitph@irtiamized.com", "")
     print("logged in")
     ftp.storbinary("STOR " + file, open(file, "rb"), 1024)
     print("file stored")
