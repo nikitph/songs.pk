@@ -13,6 +13,9 @@ def func(toplink):
             s = str(link.get('href'))
             if(s.__contains__('zip') and not s.__contains__('128')):
                 print(s)
+                filex = open('songs.txt', 'a')
+                filex.write(s + '\n')
+                filex.close()
                 """filename = 'temp.zip'
                 urllib.urlretrieve(s, filename)
                 writeftp('temp.zip')"""
